@@ -1,5 +1,5 @@
 # VERSION
-STEdgeAI Core v9.0.0 (X-CUBE-AI v9.0.0) / Python version : 3.9.13 / Numpy version : 1.23.0 / TF version : 2.12.0 / ONNX version : 1.10.2 / ONNX RT version : 1.15.0
+STEdgeAI Core v10.0.0 (X-CUBE-AI v10.0.0) / Python version : 3.9.13 / Numpy version : 1.23.0 / TF version : 2.12.0 / ONNX version : 1.10.2 / ONNX RT version : 1.15.0
 
 # Example
 
@@ -18,6 +18,8 @@ f411re 보드에 On Device할 수 있습니다.
 
 # Midware Package
 ![image](https://github.com/user-attachments/assets/16bbdcf0-3b95-46ab-8201-f115b48989ad)
+*사진과 다르게 Model Name을 Sin_wave로 하지마시고, network 기본으로 설정되어 있을 것입니다.
+그대로 network로 사용하였습니다. (Model Name을 network로 설정되어 있습니다.)
 
 # CLK
 ![image](https://github.com/user-attachments/assets/de90ef0f-2e48-4dd7-99e1-dd4cc93d5606)
