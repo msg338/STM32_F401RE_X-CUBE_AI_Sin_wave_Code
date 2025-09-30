@@ -6,6 +6,13 @@ STEdgeAI Core v10.0.0 (X-CUBE-AI v10.0.0) / Python version : 3.9.13 / Numpy vers
 ![image](https://github.com/user-attachments/assets/fbb78414-2fef-4118-ba61-dfec28a1d03c)
 ![image](https://github.com/user-attachments/assets/146f80df-4a3b-4a93-9427-03e20b37c1a0)
 
+sin_wave model using 3 Dense Layer layers via Python
+y=sin(x) (x: input, y: prediction)
+Depending on the input of x values, you can create a model that can predict y values between -1 and 1.
+Using this sin_wave model, from the STM32MX to the midware package
+Use X-CUBE-AI to import the sin_wave.tflite model
+You can turn on the f411re board.
+
 파이썬을 통해 3개의 Dense Layer 층를 사용하여 sin_wave model
 y=sin(x) (x:입력, y: 예측)
 x값 입력에 따라 -1~1사이의 y값을 예측할 수 있는 모델을 만들 수 있습니다.
@@ -18,15 +25,23 @@ f411re 보드에 On Device할 수 있습니다.
 
 # Midware Package
 ![image](https://github.com/user-attachments/assets/16bbdcf0-3b95-46ab-8201-f115b48989ad)
+*Unlike the picture, do not set the Model Name to Sin_wave, but it will be set to network default.
+I used network as it is. (Model Name is set to network.)
+
 *사진과 다르게 Model Name을 Sin_wave로 하지마시고, network 기본으로 설정되어 있을 것입니다.
 그대로 network로 사용하였습니다. (Model Name을 network로 설정되어 있습니다.)
 
 # CLK
 ![image](https://github.com/user-attachments/assets/de90ef0f-2e48-4dd7-99e1-dd4cc93d5606)
 
-# Tera Term 출력
+# Tera Term Output
 
 ![image](https://github.com/user-attachments/assets/54b6ef14-4aa1-459e-9045-23626f9ab24b)
+Initially, the model's number and the model's name are printed out, and you can see the model's input/output type. (Press the Reset button.)
+Calculated and predicted values show an error rate of 2.8%.
+
+I attached the sin_wave experiments project I made as a zip file.
+If you use it, you need to upload the midware package -> X-CUBE-AI model from IDE again. / Additionally, I attached the sin_wave.tflite model.
 
 처음 시작은 모델의 번호 및 모델의 이름이 출력되며, 모델의 입출력 형태를 확인할 수 있습니다. (Reset 버튼을 눌러보세요.)
 계산값과 예측값을 계산해 보니 오차률 2.8%로 나타납니다.
@@ -34,6 +49,6 @@ f411re 보드에 On Device할 수 있습니다.
 내가 만든 sin_wave examples Project를 zip파일로 첨부했습니다.
 사용하실 경우 IDE에서 미드웨어 패키지 -> X-CUBE-AI 모델 업로드를 다시해주셔야 합니다. / 추가로 sin_wave.tflite 모델도 첨부했습니다.
 
-# 자료사용 출처:
+# Source of data use:
 https://www.digikey.kr/en/maker/projects/tinyml-getting-started-with-stm32-x-cube-ai/f94e1c8bfc1e4b6291d0f672d780d2c0
 https://gist.github.com/ShawnHymel/79237fe6aee5a3653c497d879f746c0c
